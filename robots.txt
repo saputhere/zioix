@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zioix.com/sitemap.xml

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZIOIX — Building Intelligent Digital Solutions</title>
+
+<meta name="description" content="ZIOIX builds AI-powered software, SaaS platforms, and scalable enterprise solutions.">
+<meta name="keywords" content="AI development, SaaS development, automation systems, cloud engineering">
+
+<!-- Open Graph -->
+<meta property="og:title" content="ZIOIX — Intelligent Digital Solutions">
+<meta property="og:description" content="We engineer scalable AI-driven platforms and modern software systems.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zioix.com">
+<meta property="og:image" content="assets/images/og-image.jpg">
+
+<!-- Preconnect for performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="assets/css/style.min.css">
+<link rel="icon" href="assets/images/favicon.png">
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="cur"></div>
+<div id="crng"></div>
+
+<!-- ===================================================
+     NAVBAR
+=================================================== -->
+<nav id="navbar">
+  <div class="nlogo">Z<span>IOI</span>X</div><!--<img src="assets/images/logo.png" loading="lazy" alt="ZIOIX">-->
+  <ul class="nlinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#contact" class="ncta">Let's Talk</a></li>
+  </ul>
+  <button class="ham" id="hamBtn" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobmenu" id="mobmenu">
+  <a href="#about"        onclick="closeMob()">About</a>
+  <div class="mobdiv"></div>
+  <a href="#services"     onclick="closeMob()">Services</a>
+  <div class="mobdiv"></div>
+  <a href="#projects"     onclick="closeMob()">Work</a>
+  <div class="mobdiv"></div>
+  <a href="#testimonials" onclick="closeMob()">Reviews</a>
+  <div class="mobdiv"></div>
+  <a href="#contact" class="mobcta" onclick="closeMob()">Let's Talk</a>
+</div>
+
+<!-- ===================================================
+     HERO
+=================================================== -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-bg"></div>
+  <div class="particles" id="particles"></div>
+
+  <!-- ambient orbs -->
+  <div class="orb" style="width:460px;height:460px;background:radial-gradient(circle,rgba(179,19,23,.27),transparent);top:-80px;right:-80px;animation-duration:11s;"></div>
+  <div class="orb" style="width:280px;height:280px;background:radial-gradient(circle,rgba(179,19,23,.17),transparent);bottom:10%;left:-70px;animation-duration:7s;animation-delay:-2s;"></div>
+
+  <div class="hero-inner">
+
+    <!-- LEFT CONTENT -->
+    <div class="hero-left">
+      <div class="hero-badge">Next-Gen Software Studio</div>
+      <h1 class="hero-h1">Building<br><em>Intelligent</em><br>Digital Solutions</h1>
+      <p class="hero-sub">We engineer scalable software, automation systems, and AI-powered platforms that transform how businesses operate and grow in the digital age.</p>
+      <div class="hero-btns">
+        <a href="#services" class="btn btn-red">
+          Get Started
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-out">Contact Us</a>
+      </div>
+    </div>
+
+    <!-- RIGHT PANELS -->
+    <div class="hero-right">
+      <!-- Stats card -->
+      <div class="glass hcard hcard1">
+        <div class="hcard-lbl">Live Performance</div>
+        <div class="stat-row">
+          <div>
+            <div class="st-lbl">Projects Delivered</div>
+            <div class="st-val">340<span>+</span></div>
+            <div class="sbar"><div class="sbar-fill" style="--w:87%"></div></div>
+          </div>
+          <div>
+            <div class="st-lbl">Client Retention</div>
+            <div class="st-val">98<span>%</span></div>
+            <div class="sbar"><div class="sbar-fill" style="--w:98%;animation-delay:1.1s"></div></div>
+          </div>
+        </div>
+      </div>
+      <!-- Build card -->
+      <div class="glass build-card hcard2">
+        <div class="bc-lbl">Current Build</div>
+        <div class="bc-val">AI-Powered SaaS Platform</div>
+        <div class="bc-status">
+          <div class="bc-dot"></div>
+          <span>In progress — 72% complete</span>
+        </div>
+        <div class="bc-bar"><div class="bc-bar-fill"></div></div>
+      </div>
+      <!-- Mini stats -->
+      <div class="glass mini-stats hcard3">
+        <div class="ms">
+          <div class="ms-val">8<span>+</span></div>
+          <div class="ms-lbl">Years Active</div>
+        </div>
+        <div class="ms">
+          <div class="ms-val">50<span>+</span></div>
+          <div class="ms-lbl">Team Experts</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="scroll-hint">
+    Scroll
+    <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5"/></svg>
+  </div>
+</section>
+
+<!-- ===================================================
+     ABOUT
+=================================================== -->
+<section id="about">
+  <div class="orb" style="width:360px;height:360px;background:radial-gradient(circle,rgba(179,19,23,.15),transparent);top:-80px;left:-80px;animation-delay:-1s;"></div>
+  <div class="about-grid">
+    <div class="fade-left">
+      <span class="lbl">About ZIOIX</span>
+      <h2 class="stitle">We Build Software<br>That <span style="color:var(--red)">Moves</span> Markets</h2>
+      <p class="about-p">ZIOIX is a high-performance software studio specializing in AI-driven applications, scalable SaaS platforms, and enterprise digital transformation — founded on the belief that great technology should be both powerful and elegant.</p>
+      <p class="about-p">We partner with startups, scale-ups, and enterprise companies to architect digital systems that create lasting competitive advantage. Our team operates at the cutting edge of what's possible.</p>
+      <div class="counters">
+        <div><div class="cval">340<span>+</span></div><div class="clbl">Projects Shipped</div></div>
+        <div><div class="cval">48<span>+</span></div><div class="clbl">Global Clients</div></div>
+        <div><div class="cval">98<span>%</span></div><div class="clbl">Satisfaction Rate</div></div>
+      </div>
+    </div>
+    <div class="acards fade-right">
+      <div class="glass acard">
+        <div class="aicon"><img src="assets/images/icon-svg/target.svg" loading="lazy" alt="Mission"></div>
+        <h3>Our Mission</h3>
+        <p>To accelerate human and organizational potential through intelligent software — building systems that are not just functional, but transformative in every interaction.</p>
+      </div>
+      <div class="glass acard">
+        <div class="aicon"><img src="assets/images/icon-svg/vision.svg" loading="lazy" alt="Vision"></div>
+        <h3>Our Vision</h3>
+        <p>To be the defining force in next-generation software — known for engineering excellence, creative systems thinking, and measurable business impact worldwide.</p>
+      </div>
+      <div class="glass acard">
+        <div class="aicon"><img src="assets/images/icon-svg/approach.svg" loading="lazy" alt="Approach"></div>
+        <h3>Our Approach</h3>
+        <p>Rapid prototyping meets rigorous engineering. We move fast without breaking what matters — delivering production-grade software at startup velocity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     SERVICES
+=================================================== -->
+<section id="services">
+  <div class="orb" style="width:460px;height:460px;background:radial-gradient(circle,rgba(179,19,23,.1),transparent);bottom:-100px;right:-100px;animation-duration:12s;"></div>
+  <div class="sec-top fade-up">
+    <div>
+      <span class="lbl">What We Do</span>
+      <h2 class="stitle">Services Built for<br>the Modern Digital Era</h2>
+    </div>
+    <p class="ssub" style="max-width:290px">End-to-end digital solutions engineered for performance, scale, and longevity.</p>
+  </div>
+  <div class="svc-grid">
+    <div class="glass svc-card fade-up" style="transition-delay:.05s">
+      <div class="svc-ico"><img src="assets/images/icon-svg/development/web-dev.svg" loading="lazy" alt="Web Development"></div>
+      <h3>Web Development</h3>
+      <p>High-performance web apps built with modern stacks — from blazing-fast static sites to complex enterprise portals.</p>
+      <span class="svc-arr">Explore <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+    </div>
+    <div class="glass svc-card fade-up" style="transition-delay:.1s">
+      <div class="svc-ico"><img src="assets/images/icon-svg/development/mob-dev.svg" loading="lazy" alt="Mobile App Development"></div>
+      <h3>Mobile App Development</h3>
+      <p>Native and cross-platform mobile experiences — iOS and Android built with Flutter, React Native, or Swift/Kotlin.</p>
+      <span class="svc-arr">Explore <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+    </div>
+    <div class="glass svc-card fade-up" style="transition-delay:.15s">
+      <div class="svc-ico"><img src="assets/images/icon-svg/development/ai-dev.svg" loading="lazy" alt="AI Development"></div>
+      <h3>AI &amp; Automation</h3>
+      <p>Custom ML models, LLM integrations, intelligent agents, and workflow automations that unlock new capabilities.</p>
+      <span class="svc-arr">Explore <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+    </div>
+    <div class="glass svc-card fade-up" style="transition-delay:.2s">
+      <div class="svc-ico"><img src="assets/images/icon-svg/development/saas-dev.svg" loading="lazy" alt="SaaS Development"></div>
+      <h3>SaaS Development</h3>
+      <p>Full-cycle SaaS product development — from architecture and MVP to billing systems and multi-tenant platforms.</p>
+      <span class="svc-arr">Explore <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+    </div>
+    <div class="glass svc-card fade-up" style="transition-delay:.25s">
+      <div class="svc-ico"><img src="assets/images/icon-svg/development/cloud-dev.svg" loading="lazy" alt="Cloud Development"></div>
+      <h3>Cloud Solutions</h3>
+      <p>AWS, GCP, and Azure architecture, DevOps pipelines, and Kubernetes orchestration for resilient, scalable systems.</p>
+      <span class="svc-arr">Explore <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+    </div>
+    <div class="glass svc-card fade-up" style="transition-delay:.3s;background:linear-gradient(135deg,rgba(179,19,23,.1),rgba(179,19,23,.02));border-color:rgba(179,19,23,.22)">
+      <div class="svc-ico"><img src="assets/images/icon-svg/development/tech-consulting.svg" loading="lazy" alt="Tech Consulting"></div>
+      <h3>Tech Consulting</h3>
+      <p>Strategic technology advisory for CTOs and founders — architecture review, stack selection, team augmentation.</p>
+      <span class="svc-arr">Explore <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     WHY US
+=================================================== -->
+<section id="why">
+  <div class="why-head fade-up">
+    <span class="lbl">Why ZIOIX</span>
+    <h2 class="stitle">The ZIOIX Difference</h2>
+    <p class="ssub">We don't just write code. We build digital leverage — systems that grow with you and give you an unfair advantage.</p>
+  </div>
+  <div class="why-grid">
+    <div class="glass why-card fade-up" style="transition-delay:.05s"><span class="why-num">01</span><div class="why-ico"><img src="assets/images/icon-svg/value/rapid-delivery-icon.svg" loading="lazy" alt="Rapid Delivery"></div><h3>Rapid Delivery</h3><p>Agile sprints, CI/CD pipelines, and battle-tested processes that get products to market in weeks, not months.</p></div>
+    <div class="glass why-card fade-up" style="transition-delay:.1s"><span class="why-num">02</span><div class="why-ico"><img src="assets/images/icon-svg/value/security-icon.svg" loading="lazy" alt="Security First"></div><h3>Security First</h3><p>Every line reviewed for vulnerabilities. SOC2-aligned practices, encrypted data, and zero-trust architecture by default.</p></div>
+    <div class="glass why-card fade-up" style="transition-delay:.15s"><span class="why-num">03</span><div class="why-ico"><img src="assets/images/icon-svg/value/built-to-scale-icon.svg" loading="lazy" alt="Built to Scale"></div><h3>Built to Scale</h3><p>Systems architected to handle 10× traffic without breaking a sweat. Performance is not an afterthought — it's a requirement.</p></div>
+    <div class="glass why-card fade-up" style="transition-delay:.2s"><span class="why-num">04</span><div class="why-ico"><img src="assets/images/icon-svg/value/ai-native-icon.svg" loading="lazy" alt="AI-Native Thinking"></div><h3>AI-Native Thinking</h3><p>We embed intelligence into every layer of your product — not as a feature, but as a fundamental architectural principle.</p></div>
+    <div class="glass why-card fade-up" style="transition-delay:.25s"><span class="why-num">05</span><div class="why-ico"><img src="assets/images/icon-svg/value/deep-partnership-icon.svg" loading="lazy" alt="Deep Partnership"></div><h3>Deep Partnership</h3><p>We become an extension of your team. Transparent communication, weekly demos, and a shared stake in your success.</p></div>
+    <div class="glass why-card fade-up" style="transition-delay:.3s"><span class="why-num">06</span><div class="why-ico"><img src="assets/images/icon-svg/value/global-experties-icon.svg" loading="lazy" alt="Global Expertise"></div><h3>Global Expertise</h3><p>Distributed teams across time zones ensuring 24/7 coverage, diverse perspectives, and world-class talent.</p></div>
+  </div>
+</section>
+
+<!-- ===================================================
+     PROJECTS
+=================================================== -->
+<section id="projects">
+  <div class="sec-top fade-up">
+    <div>
+      <span class="lbl">Our Work</span>
+      <h2 class="stitle">Selected Projects</h2>
+    </div>
+    <a href="#contact" class="btn btn-out" style="flex-shrink:0">View All Work →</a>
+  </div>
+  <div class="proj-grid">
+    <div class="pcard fade-up" style="transition-delay:.05s"><div class="pbg" style="background:linear-gradient(135deg,#1a0505,#280808,#0f0a0a)"><div style="font-size:4rem;opacity:.2;filter:blur(1px)">🤖</div></div><div class="pov"><span class="ptag">AI / Machine Learning</span><h3>NeuralFlow Analytics</h3><p>Predictive intelligence platform for enterprise data</p></div><div class="phov"><button class="pbtn">View Case Study</button></div></div>
+    <div class="pcard fade-up" style="transition-delay:.1s"><div class="pbg" style="background:linear-gradient(135deg,#050c1a,#091228,#0a0a0f)"><div style="font-size:4rem;opacity:.2;filter:blur(1px)">📱</div></div><div class="pov"><span class="ptag">Mobile App</span><h3>PulseTrack Health</h3><p>Real-time biometric monitoring for athletes</p></div><div class="phov"><button class="pbtn">View Case Study</button></div></div>
+    <div class="pcard fade-up" style="transition-delay:.15s"><div class="pbg" style="background:linear-gradient(135deg,#0c1a05,#152608,#0a0f0a)"><div style="font-size:4rem;opacity:.2;filter:blur(1px)">☁️</div></div><div class="pov"><span class="ptag">Cloud / SaaS</span><h3>Nexus Infrastructure</h3><p>Multi-region cloud orchestration platform</p></div><div class="phov"><button class="pbtn">View Case Study</button></div></div>
+    <div class="pcard fade-up" style="transition-delay:.2s"><div class="pbg" style="background:linear-gradient(135deg,#1a1005,#281e0a,#0f0f0a)"><div style="font-size:4rem;opacity:.2;filter:blur(1px)">🌐</div></div><div class="pov"><span class="ptag">Web Platform</span><h3>Stratum Commerce</h3><p>High-volume e-commerce engine with AI pricing</p></div><div class="phov"><button class="pbtn">View Case Study</button></div></div>
+    <div class="pcard fade-up" style="transition-delay:.25s"><div class="pbg" style="background:linear-gradient(135deg,#1a051a,#280a28,#0f0a0f)"><div style="font-size:4rem;opacity:.2;filter:blur(1px)">🚀</div></div><div class="pov"><span class="ptag">SaaS Product</span><h3>Vortex DevOps Suite</h3><p>CI/CD automation for distributed engineering teams</p></div><div class="phov"><button class="pbtn">View Case Study</button></div></div>
+    <div class="pcard fade-up" style="transition-delay:.3s"><div class="pbg" style="background:linear-gradient(135deg,#050d1a,#0a1b28,#0a0a0f)"><div style="font-size:4rem;opacity:.2;filter:blur(1px)">🔮</div></div><div class="pov"><span class="ptag">AI Automation</span><h3>Oraculum AI</h3><p>Autonomous business process optimization engine</p></div><div class="phov"><button class="pbtn">View Case Study</button></div></div>
+  </div>
+</section>
+
+<!-- ===================================================
+     TESTIMONIALS
+=================================================== -->
+<section id="testimonials">
+  <div class="t-head fade-up">
+    <span class="lbl">Testimonials</span>
+    <h2 class="stitle">Trusted by Builders &amp; Leaders</h2>
+    <p class="ssub">Don't take our word for it — hear from the teams we've helped scale.</p>
+  </div>
+  <div class="t-outer">
+    <div class="t-track" id="tTrack">
+      <div class="glass tcard"><div class="stars">★★★★★</div><blockquote>"ZIOIX didn't just deliver our platform — they elevated it. The AI recommendation engine increased our conversion rate by 34% in the first quarter. Truly exceptional engineering."</blockquote><div class="t-auth"><div class="tav">MK</div><div><div class="t-name">Marcus Klein</div><div class="t-role">CTO, Luminary Ventures</div></div></div></div>
+      <div class="glass tcard"><div class="stars">★★★★★</div><blockquote>"The team operated with technical precision and strategic clarity I've rarely encountered. They rebuilt our entire backend in 8 weeks with zero downtime."</blockquote><div class="t-auth"><div class="tav">SR</div><div><div class="t-name">Sophia Reyes</div><div class="t-role">VP Engineering, Ascend Health</div></div></div></div>
+      <div class="glass tcard"><div class="stars">★★★★★</div><blockquote>"From the first call to final deployment, working with ZIOIX felt like having a world-class co-founder on the technical side. Our SaaS launched on time and above expectations."</blockquote><div class="t-auth"><div class="tav">JL</div><div><div class="t-name">James Liu</div><div class="t-role">Founder, DataBridge AI</div></div></div></div>
+      <div class="glass tcard"><div class="stars">★★★★★</div><blockquote>"Our mobile app reached 100K downloads in 3 months post-launch. ZIOIX's attention to performance, UX detail, and code quality made the decisive difference."</blockquote><div class="t-auth"><div class="tav">AO</div><div><div class="t-name">Aisha Okonkwo</div><div class="t-role">CEO, SwiftMove Logistics</div></div></div></div>
+      <div class="glass tcard"><div class="stars">★★★★★</div><blockquote>"ZIOIX transformed our operations with an automation suite saving 3,000+ hours annually. They understood the problem deeper than we did — and built something we didn't know was possible."</blockquote><div class="t-auth"><div class="tav">TN</div><div><div class="t-name">Thomas Nakamura</div><div class="t-role">COO, Meridian Financial</div></div></div></div>
+    </div>
+  </div>
+  <div class="t-dots" id="tDots"></div>
+</section>
+
+<!-- ===================================================
+     CONTACT
+=================================================== -->
+<section id="contact">
+  <div class="orb" style="width:420px;height:420px;background:radial-gradient(circle,rgba(179,19,23,.16),transparent);top:-50px;right:8%;animation-delay:-.5s;"></div>
+  <div class="contact-wrap">
+    <div class="fade-left">
+      <span class="lbl">Get In Touch</span>
+      <h2 class="c-title">Ready to Build<br><span style="color:var(--red)">Something</span> Great?</h2>
+      <p class="c-sub">Tell us about your project. We'll get back within 24 hours with a thoughtful response — not a sales pitch.</p>
+      <div class="c-dets">
+        <div class="cdet"><div class="cico">📍</div><span>San Francisco, CA &amp; Remote Worldwide</span></div>
+        <div class="cdet"><div class="cico">✉️</div><span>hello@zioix.com</span></div>
+        <div class="cdet"><div class="cico">📞</div><span>+1 (415) 000-0000</span></div>
+      </div>
+      <div class="socials">
+        <a class="socbtn" href="#" title="LinkedIn"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
+        <a class="socbtn" href="#" title="X"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+        <a class="socbtn" href="#" title="GitHub"><svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg></a>
+        <a class="socbtn" href="#" title="Dribbble"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg></a>
+      </div>
+    </div>
+    <div class="glass cform fade-right">
+      <div style="font-family:var(--fd);font-size:1.3rem;font-weight:700;letter-spacing:.04em;margin-bottom:.18rem">Start a Project</div>
+      <p style="color:var(--mut);font-size:.83rem;margin-bottom:.35rem">Tell us what you're building — we'll show you how to do it better.</p>
+      <div style="height:1px;background:var(--gbr);margin-bottom:1.4rem"></div>
+      <div class="frow">
+        <div class="fg"><label class="flbl">First Name</label><input class="fi" type="text" placeholder="John"></div>
+        <div class="fg"><label class="flbl">Last Name</label><input class="fi" type="text" placeholder="Smith"></div>
+      </div>
+      <div class="fg"><label class="flbl">Email Address</label><input class="fi" type="email" placeholder="john@company.com"></div>
+      <div class="fg">
+        <label class="flbl">Project Type</label>
+        <select class="fi" style="cursor:pointer;appearance:none">
+          <option style="background:#161617" value="">Select a service…</option>
+          <option style="background:#161617">Web Development</option>
+          <option style="background:#161617">Mobile App Development</option>
+          <option style="background:#161617">AI &amp; Automation</option>
+          <option style="background:#161617">SaaS Development</option>
+          <option style="background:#161617">Cloud Solutions</option>
+          <option style="background:#161617">Tech Consulting</option>
+        </select>
+      </div>
+      <div class="fg"><label class="flbl">Tell Us About Your Project</label><textarea class="fta" placeholder="Describe your vision, goals, timeline, and budget range…"></textarea></div>
+      <button class="btn btn-red sub-btn" id="subBtn">
+        Send Message
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     FOOTER
+=================================================== -->
+<footer>
+  <div class="ft">
+    <div class="fbrand">
+      <div class="flogo">Z<span>IOI</span>X</div>
+      <p>Building intelligent digital solutions for the next generation of technology companies. Your vision, engineered to scale.</p>
+      <div class="socials" style="margin-top:1.35rem">
+        <a class="socbtn" href="#" style="width:36px;height:36px;border-radius:8px;font-size:.75rem;font-family:var(--fs);font-weight:700">in</a>
+        <a class="socbtn" href="#" style="width:36px;height:36px;border-radius:8px;font-size:.75rem;font-family:var(--fs);font-weight:700">𝕏</a>
+        <a class="socbtn" href="#" style="width:36px;height:36px;border-radius:8px;font-size:.75rem;font-family:var(--fs);font-weight:700">gh</a>
+      </div>
+    </div>
+    <div class="fcol"><h4>Services</h4><ul><li><a href="#">Web Development</a></li><li><a href="#">Mobile Apps</a></li><li><a href="#">AI &amp; Automation</a></li><li><a href="#">SaaS Development</a></li><li><a href="#">Cloud Solutions</a></li></ul></div>
+    <div class="fcol"><h4>Company</h4><ul><li><a href="#">About Us</a></li><li><a href="#">Our Work</a></li><li><a href="#">Careers</a></li><li><a href="#">Blog</a></li><li><a href="#">Press</a></li></ul></div>
+    <div class="fcol"><h4>Contact</h4><ul><li><a href="#">hello@zioix.com</a></li><li><a href="#">+1 (415) 000-0000</a></li><li><a href="#">San Francisco, CA</a></li><li><a href="#">Support Portal</a></li></ul></div>
+  </div>
+  <div class="fdiv"></div>
+  <div class="fb">
+    <p>© 2025 <a href="#">ZIOIX</a>. All rights reserved. Engineered for excellence.</p>
+    <div class="fleg"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+  </div>
+</footer>
+<script defer src="assets/js/main.min.js"></script>
+</body>
+</html>
+
